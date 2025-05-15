@@ -5,15 +5,11 @@ Science track challenge for FLIQ 2025 hackathon
 
 A challenge hosted by **Classiq Technologies** and **DuQIS** (Duke Quantum Information Society) as part of the FLIQ Hackathon. Participants will apply **quantum machine learning** to distinguish between different phases of quantum matter using measurement data obtained in randomized bases.
 
----
-
 ## Challenge Summary
 
 The task is to build a **Quantum Machine Learning (QML)** model capable of classifying different phases of quantum matter from measurement data.
 
 Unlike typical datasets, your inputs are **classical shadows**: compressed representations of quantum states constructed via randomized measurements. Your model should learn to identify the phase label of a quantum state based only on this information.
-
----
 
 ## Background
 
@@ -41,8 +37,6 @@ For more details, see:
 - Huang et al., *Nature Physics* (2020), arXiv:2002.08953  
 - Huang et al., *Nature* (2022), arXiv:2112.00778
 
----
-
 ### QML Models
 
 Participants are expected to build a parameterized quantum circuit to classify measurement data. The exact architecture — including encoding scheme, number of qubits, and circuit layers — is up to you.
@@ -51,8 +45,6 @@ Suggested reading:
 
 - Sim et al., arXiv:1905.10876  
 - Cong et al., arXiv:1810.03787
-
----
 
 ## Dataset Format
 
@@ -73,8 +65,6 @@ $$
 
 It is up to you to choose which reduced density matrices to extract as features (e.g., 1-qubit, 2-qubit). Avoid reconstructing the full $\rho$, which is a $2^n \times 2^n$ object.
 
----
-
 ## Your Task
 
 Build a quantum circuit that:
@@ -82,8 +72,6 @@ Build a quantum circuit that:
 - Takes as input reduced density matrices constructed from the measurement data
 - Outputs a prediction of the quantum phase
 - Is optimized for both accuracy and efficiency
-
----
 
 ## Grading Criteria
 
@@ -101,8 +89,6 @@ Where:
 - $\alpha, \beta, \gamma, \delta$: fixed positive constants
 
 Higher values of $f$ indicate better solutions.
-
----
 
 ## Tips
 
