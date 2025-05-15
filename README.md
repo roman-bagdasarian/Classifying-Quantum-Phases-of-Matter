@@ -18,16 +18,19 @@ Unlike typical datasets, your inputs are **classical shadows**: compressed repre
 A classical shadow is a compact representation of a quantum state constructed from local randomized measurements. Suppose an experiment prepares an $n$-qubit state $\rho$. Instead of reconstructing $\rho$ directly (which is exponentially costly), we perform $T$ rounds of random single-qubit Pauli measurements.
 
 For each round $t$, each qubit is measured in a random Pauli basis, collapsing $\rho$ into a product state:
+
 $$
 \ket{s^{(t)}} = \bigotimes_{i=1}^n \ket{s_i^{(t)}}, \quad \ket{s_i^{(t)}} \in \{\ket{0}, \ket{1}, \ket{+}, \ket{-}, \ket{+i}, \ket{-i}\}.
 $$
 
 We then form an estimate:
+
 $$
 \sigma_T(\rho) = \frac{1}{T} \sum_{t=1}^T \sigma_1^{(t)} \otimes \dots \otimes \sigma_n^{(t)}, \quad \sigma_i^{(t)} = 3\ketbra{s_i^{(t)}}{s_i^{(t)}} - I.
 $$
 
 You are provided with $nT$ measurement results per data point. You may choose to compute reduced density matrices for specific subsystems, such as:
+
 $$
 \rho^A \approx \frac{1}{T} \sum_{t=1}^T \bigotimes_{i \in A} \sigma_i^{(t)}.
 $$
