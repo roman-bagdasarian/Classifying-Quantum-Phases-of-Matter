@@ -79,6 +79,7 @@ Build a quantum circuit that:
 ## Grading Criteria
 
 Each submission will be scored using the function:
+
 $$
 f(A, P, D, W) = \alpha A - \beta P - \gamma D - \delta W
 $$
