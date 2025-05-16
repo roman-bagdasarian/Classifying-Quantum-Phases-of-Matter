@@ -40,6 +40,35 @@ For more details, see:
 - Huang et al., *Predicting Many Properties of a Quantum System from Very Few Measurements* (2020), [arXiv:2002.08953](https://arxiv.org/abs/2002.08953)
 - Huang et al., *Provably efficient machine learning for quantum many-body problems* (2022), [arXiv:2106.12627](https://arxiv.org/abs/2106.12627)
 
+### Details on Rydberg Atoms
+
+The Rydberg Hamiltonian for an atom chain reads
+
+$$
+H(\delta, R_b) = \frac{\Omega}{2} \sum_{i=1}^{N} X_i - \delta \sum_{i=1}^{N} n_i + \sum_{i<j} \frac{\Omega R_b^6}{(a|i-j|)^6} n_i \otimes n_j,
+$$
+
+where $\Omega$ is the Rabi frequency; $\delta$ is the laser detuning; $a$ is the lattice spacing; $R_b$ is the blockade radius; $n_i \equiv \ket{r_i}\bra{r_i}$ is the projector onto the Rydberg state on the $i^{\text{th}}$ qubit; and $X_i = \ket{g_i}\bra{r_i} + \ket{r_i}\bra{g_i}$ is a *Pauli X* operator. Importantly, the interaction strength decays rapidly with the inter-atomic distance:
+
+$$
+\frac{\Omega R_b^6}{(a|i-j|)^6} \equiv V_{ij} \sim \frac{1}{d_{ij}^6}.
+$$
+
+Thus, the system can be well-approximated with just a few local interaction terms for each atom, making it suitable for tensor-network descriptions.
+
+The Rydberg Hamiltonian contains three types of operators:
+
+1. Terms involving Pauli $X = \ket{r}\bra{g} + \ket{g}\bra{r}$ are responsible for driving atoms from $\ket{g}$ to $\ket{r}$. The eigenstates of $X$ are equal superpositions:  
+   $$
+   \frac{1}{\sqrt{2}}(\ket{g} + \ket{r}) \quad \text{and} \quad \frac{1}{\sqrt{2}}(\ket{g} - \ket{r}).
+   $$
+
+2. Terms involving the projector $n$ introduce the punishment (or reward) for being in the excited state: when $\delta > 0$, excitation is penalized; when $\delta < 0$, excitation is rewarded.
+
+3. The interaction terms $n_i \otimes n_j$ realize the Rydberg blockade mechanism.
+
+The interaction terms prevent neighboring sites from being excited simultaneously, while the terms involving $n$ ensure that the number of excitations is maximized when $\delta \gg 0$.
+
 ### QML Models
 
 Participants are expected to build a parameterized quantum circuit to classify measurement data. The exact architecture — including encoding scheme, number of qubits, and circuit layers — is up to you.
