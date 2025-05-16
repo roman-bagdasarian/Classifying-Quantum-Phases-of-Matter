@@ -77,7 +77,7 @@ The following reading might inspire your quantum circuit:
 
 Each data point consists of:
 
-- A list of $T$ measurement outcomes, each a list of $n$ elements $s_j^{(i,t)} \in \{\text{"g"}, \text{"r"}, \text{"+"}, \text{"-"}, \text{"+i"}, \text{"-i"}\}$
+- A list of $T$ measurement outcomes, each a list of $n$ elements $s_j^{(i,t)} \in \lbrace\text{"g"}, \text{"r"}, \text{"+"}, \text{"-"}, \text{"+i"}, \text{"-i"}\rbrace$
 - A label $y^{(i)}$ such as `"Z2"` indicating the phase
 
 Example:
