@@ -38,7 +38,7 @@ $$
 For more details, see:
 
 - Huang et al., *Predicting Many Properties of a Quantum System from Very Few Measurements* (2020), [arXiv:2002.08953](https://arxiv.org/abs/2002.08953)
-- Huang et al., *Provably efficient machine learning for quantum many-body problems* (2022), [arXiv:2106.12627](Provably efficient machine learning for quantum many-body problems)
+- Huang et al., *Provably efficient machine learning for quantum many-body problems* (2022), [arXiv:2106.12627](https://arxiv.org/abs/2106.12627)
 
 ### QML Models
 
