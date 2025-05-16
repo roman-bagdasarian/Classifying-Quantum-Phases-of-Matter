@@ -118,15 +118,24 @@ Where:
 
 Higher values of $f$ indicate better solutions.
 
-## Tips
-
-- Reduced density matrices of small subsystems may already carry enough information about the phase.
-- Consider different encoding strategies such as angle or amplitude encoding. You can find the pre-defined Classiq method for angle encoding [here](https://docs.classiq.io/latest/explore/functions/qmod_library_reference/classiq_open_library/variational_data_encoding/variational_data_encoding/#encode-on-bloch)
-- You may apply classical preprocessing, but the model must ultimately be quantum.
-
 ## This Repository
 
 In this repo you can find the following files:
 - `FLIQ_Challenge_ClassiqDuQIS.ipynb` – the notebook with code snippets, in which you will show your solution
 - `training_data.npz` – file with randomized measurements. There are 10 data points corresponding to each of the two phases studied
 - `phase_diagram.png` – Rydberg phase diagram for a 51-particle neutral atom array
+
+## Submission Instructions
+
+On the submission platform, please upload the main Jupyter notebook along with any additional `.py` files used for data processing. You should also include:
+
+- The quantum program (`qprog`) saved as a `.json` file  
+- The trained model parameters saved as a `.npz` file using NumPy  
+
+Ensure all files necessary to reproduce your results are included in the submission.
+
+## Tips
+
+- Reduced density matrices of small subsystems may already carry enough information about the phase.
+- Consider different encoding strategies such as angle or amplitude encoding. You can find the pre-defined Classiq method for angle encoding [here](https://docs.classiq.io/latest/explore/functions/qmod_library_reference/classiq_open_library/variational_data_encoding/variational_data_encoding/#encode-on-bloch)
+- You may apply classical preprocessing, but the model must ultimately be quantum.
