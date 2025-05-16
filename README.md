@@ -105,7 +105,7 @@ Build a quantum circuit that:
 Each submission will be scored using the function:
 
 $$
-f(A, P, D, W) = \alpha A - \beta P - \gamma D - \delta W
+f(A, P, D, W) = A - 0.1 \cdot P - 0.0002 \cdot D - 0.1 \cdot W
 $$
 
 Where:
@@ -113,10 +113,11 @@ Where:
 - $A$: accuracy on the test set  
 - $P$: number of trainable parameters  
 - $D$: circuit depth  
-- $W$: number of qubits (circuit width)  
-- $\alpha, \beta, \gamma, \delta$: fixed positive constants
+- $W$: number of qubits (circuit width)
 
 Higher values of $f$ indicate better solutions.
+
+This grading scheme is not rigorous - it only filters solutions. Even if your solution doesn't yield a high $f$, it may still be considered for manual grading. The best solutions will be manually graded.
 
 ## This Repository
 
@@ -125,11 +126,16 @@ In this repo you can find the following files:
 - `training_data.npz` – file with randomized measurements. There are 10 data points corresponding to each of the two phases studied
 - `phase_diagram.png` – Rydberg phase diagram for a 51-particle neutral atom array
 
+## Getting Started
+
+You may clone the repository locally and use your editor of choice. Alternatively, you may clone the repository into Classiq Studio - a web-based Classiq IDE.
+If you would like to use Classiq Studio, refer to the following guide: https://docs.classiq.io/latest/user-guide/classiq-studio/
+
 ## Submission Instructions
 
 On the submission platform, please upload the main Jupyter notebook along with any additional `.py` files used for data processing. You should also include:
 
-- The quantum program (`qprog`) saved as a `.json` file  
+- The quantum program (`qprog`) saved as a `.qprog` file  
 - The trained model parameters saved as a `.npz` file using NumPy  
 
 Ensure all files necessary to reproduce your results are included in the submission.
