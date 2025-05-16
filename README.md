@@ -37,8 +37,8 @@ $$
 
 For more details, see:
 
-- Huang et al., *Nature Physics* (2020), arXiv:2002.08953  
-- Huang et al., *Nature* (2022), arXiv:2112.00778
+- Huang et al., *Predicting Many Properties of a Quantum System from Very Few Measurements* (2020), [https://arxiv.org/abs/2002.08953](arXiv:2002.08953)
+- Huang et al., *Provably efficient machine learning for quantum many-body problems* (2022), [Provably efficient machine learning for quantum many-body problems](arXiv:2106.12627)
 
 ### QML Models
 
@@ -46,8 +46,7 @@ Participants are expected to build a parameterized quantum circuit to classify m
 
 Suggested reading:
 
-- Sim et al., arXiv:1905.10876  
-- Cong et al., arXiv:1810.03787
+- Sim et al., *Expressibility and Entangling Capability of Parameterized Quantum Circuits for Hybrid Quantum‐Classical Algorithms* (2019), [https://arxiv.org/abs/1905.10876](arXiv:1905.10876)
 
 ## Dataset Format
 
@@ -97,5 +96,6 @@ Higher values of $f$ indicate better solutions.
 ## Tips
 
 - Reduced density matrices of small subsystems may already carry enough information about the phase.
-- Consider different encoding strategies such as angle or amplitude encoding.
+- Consider different encoding strategies such as angle or amplitude encoding. You can find the pre-defined Classiq method for angle encoding [here](https://docs.classiq.io/latest/explore/functions/qmod_library_reference/classiq_open_library/variational_data_encoding/variational_data_encoding/#encode-on-bloch)
+
 - You may apply classical preprocessing, but the model must ultimately be quantum.
