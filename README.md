@@ -45,7 +45,7 @@ For more details, see:
 The Rydberg Hamiltonian for an atom chain reads
 
 $$
-H(\delta, R_b) = \frac{\Omega}{2} \sum_{i=1}^{N} X_i - \delta \sum_{i=1}^{N} n_i + \sum_{i<j} \frac{\Omega R_b^6}{(a|i-j|)^6} n_i \otimes n_j,
+H = \frac{\Omega}{2} \sum_{i=1}^{N} X_i - \delta \sum_{i=1}^{N} n_i + \sum_{i<j} \frac{\Omega R_b^6}{(a|i-j|)^6} n_i n_j,
 $$
 
 where $\Omega$ is the Rabi frequency; $\delta$ is the laser detuning; $a$ is the inter-atomic spacing; $R_b$ is the blockade radius; $n_i \equiv \ket{r_i}\bra{r_i}$ is the projector onto the Rydberg state on the $i^{\text{th}}$ qubit; and $X_i = \ket{g_i}\bra{r_i} + \ket{r_i}\bra{g_i}$ is a Pauli $X$ operator.
@@ -62,6 +62,9 @@ The Rydberg Hamiltonian contains three types of operators:
 3. The interaction terms $n_i \otimes n_j$ realize the Rydberg blockade mechanism.
 
 The interaction terms prevent neighboring sites from being excited simultaneously, while the terms involving $n$ ensure that the number of excitations is maximized when $\delta \gg 0$. Thanks to this interplay of Hamiltonian terms, neutral-atom systems constitute interesting phases of matter even in a single spacial dimension. You can find the phase diagram for a 51-atom chain inside the challenge notebook. Your goal is to design a quantum model that can distiguish between the so-called $Z2$-ordered and $Z3$-ordered states.
+
+For more information, please refer to
+- Bloqade Julia
 
 ### QML Models
 
