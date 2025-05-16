@@ -85,7 +85,7 @@ Example:
 $$
 x^{(i)} = \left[
 \left[\text{"-"}, \text{"+i"}, \dots, \text{"g"}\right],\ 
-\left[\text{"0"}, \text{"-i"}, \dots, \text{"r"}\right],\ 
+\left[\text{"g"}, \text{"-i"}, \dots, \text{"r"}\right],\ 
 \dots
 \right]; \quad y^{(i)} = \text{"Z2"}
 $$
