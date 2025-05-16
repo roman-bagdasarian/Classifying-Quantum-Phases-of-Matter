@@ -3,7 +3,7 @@ Science track challenge for FLIQ 2025 hackathon
 
 # Classifying Quantum Phases of Matter
 
-A challenge hosted by **Classiq Technologies** and **DuQIS** (Duke Quantum Information Society) as part of the FLIQ Hackathon. Participants will apply **quantum machine learning** to distinguish between different phases of quantum matter using measurement data obtained in randomized bases.
+A challenge hosted by **Classiq Technologies** and **DuQIS** (Duke Quantum Information Society) as part of the FLIQ Hackathon. Participants will apply **quantum machine learning** to distinguish between different phases of a Rydberg atom system using measurement data obtained in randomized bases.
 
 ## Challenge Summary
 
@@ -122,5 +122,4 @@ Higher values of $f$ indicate better solutions.
 
 - Reduced density matrices of small subsystems may already carry enough information about the phase.
 - Consider different encoding strategies such as angle or amplitude encoding. You can find the pre-defined Classiq method for angle encoding [here](https://docs.classiq.io/latest/explore/functions/qmod_library_reference/classiq_open_library/variational_data_encoding/variational_data_encoding/#encode-on-bloch)
-
 - You may apply classical preprocessing, but the model must ultimately be quantum.
