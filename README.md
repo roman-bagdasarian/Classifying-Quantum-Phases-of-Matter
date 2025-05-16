@@ -112,7 +112,7 @@ Where:
 
 - $A$: accuracy on the test set  
 - $P$: number of trainable parameters  
-- $D$: circuit depth (with gate set of 1-qubit unitaries and CNOTs)  
+- $D$: circuit depth
 - $W$: number of qubits (circuit width)  
 - $\alpha, \beta, \gamma, \delta$: fixed positive constants
 
@@ -123,3 +123,8 @@ Higher values of $f$ indicate better solutions.
 - Reduced density matrices of small subsystems may already carry enough information about the phase.
 - Consider different encoding strategies such as angle or amplitude encoding. You can find the pre-defined Classiq method for angle encoding [here](https://docs.classiq.io/latest/explore/functions/qmod_library_reference/classiq_open_library/variational_data_encoding/variational_data_encoding/#encode-on-bloch)
 - You may apply classical preprocessing, but the model must ultimately be quantum.
+
+## This Repository
+
+In this repo you can find the following files:
+- 
