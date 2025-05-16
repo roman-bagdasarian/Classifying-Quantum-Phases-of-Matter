@@ -134,6 +134,8 @@ On the submission platform, please upload the main Jupyter notebook along with a
 
 Ensure all files necessary to reproduce your results are included in the submission.
 
+*Submission deadline: Sunday, May 18 at 08:00 UTC* — mark it, set alarms, summon caffeine.
+
 ## Tips
 
 - Reduced density matrices of small subsystems may already carry enough information about the phase.
