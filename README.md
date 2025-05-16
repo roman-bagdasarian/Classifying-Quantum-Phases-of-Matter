@@ -63,7 +63,7 @@ The Rydberg Hamiltonian contains three types of operators:
 The interaction terms prevent neighboring sites from being excited simultaneously, while the terms involving $n$ ensure that the number of excitations is maximized when $\delta \gg 0$. Thanks to this interplay of Hamiltonian terms, neutral-atom systems constitute interesting phases of matter even in a single spacial dimension. You can find the phase diagram for a 51-atom chain inside the challenge notebook. Your goal is to design a quantum model that can distiguish between the so-called $Z2$-ordered and $Z3$-ordered states.
 
 For more information, please refer to
-- Bloqade Julia
+- [Bloqade Julia](https://queracomputing.github.io/Bloqade.jl/stable/tutorials/1.blockade/main/)
 
 ### QML Models
 
