@@ -45,17 +45,14 @@ For more details, see:
 The Rydberg Hamiltonian for an atom chain reads
 
 $$
-H = \frac{\Omega}{2} \sum_{i=1}^{N} X_i - \delta \sum_{i=1}^{N} n_i + \sum_{i<j} \frac{\Omega R_b^6}{(a|i-j|)^6} n_i n_j,
+H = \frac{\Omega}{2} \sum_{i=1}^{N} X_i - \delta \sum_{i=1}^{N} n_i + \sum_{i<j} \frac{\Omega R_b^6 }{(a|i-j|)^6 } n_i n_j,
 $$
 
 where $\Omega$ is the Rabi frequency; $\delta$ is the laser detuning; $a$ is the inter-atomic spacing; $R_b$ is the blockade radius; $n_i \equiv \ket{r_i}\bra{r_i}$ is the projector onto the Rydberg state on the $i^{\text{th}}$ qubit; and $X_i = \ket{g_i}\bra{r_i} + \ket{r_i}\bra{g_i}$ is a Pauli $X$ operator.
 
 The Rydberg Hamiltonian contains three types of operators:
 
-1. Terms involving Pauli $X = \ket{r}\bra{g} + \ket{g}\bra{r}$ are responsible for driving atoms from $\ket{g}$ to $\ket{r}$. The eigenstates of $X$ are equal superpositions:  
-   $$
-   \frac{1}{\sqrt{2}}(\ket{g} + \ket{r}) \quad \text{and} \quad \frac{1}{\sqrt{2}}(\ket{g} - \ket{r}).
-   $$
+1. Terms involving Pauli $X = \ket{r}\bra{g} + \ket{g}\bra{r}$ are responsible for driving atoms from $\ket{g}$ to $\ket{r}$.
 
 2. Terms involving the projector $n$ introduce the punishment (or reward) for being in the excited state: when $\delta > 0$, excitation is penalized; when $\delta < 0$, excitation is rewarded.
 
