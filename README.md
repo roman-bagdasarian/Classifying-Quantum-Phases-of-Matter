@@ -87,7 +87,7 @@ x^{(i)} = \left[
 \left[\text{"-"}, \text{"+i"}, \dots, \text{"0"}\right],\ 
 \left[\text{"0"}, \text{"-i"}, \dots, \text{"1"}\right],\ 
 \dots
-\right], \quad y^{(i)} = \text{"Z2"}
+\right]; \quad y^{(i)} = \text{"Z2"}
 $$
 
 It is up to you to choose which reduced density matrices to extract as features (e.g., 1-qubit, 2-qubit). Avoid reconstructing the full $\rho$, which is a $2^n \times 2^n$ object.
