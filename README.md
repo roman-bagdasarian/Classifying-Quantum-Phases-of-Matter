@@ -20,7 +20,7 @@ A classical shadow is a compact representation of a quantum state constructed fr
 For each round $t$, each qubit is measured in a random Pauli basis, collapsing $\rho$ into a product state:
 
 $$
-\ket{s^{(t)}} = \bigotimes_{i=1}^n \ket{s_i^{(t)}}, \quad \ket{s_i^{(t)}} \in \left\{ \ket{0}, \ket{1}, \ket{+}, \ket{-}, \ket{+i}, \ket{-i} \right\}.
+\ket{s^{(t)}} = \bigotimes_{i=1}^n \ket{s_i^{(t)}}, \quad \ket{s_i^{(t)}} \in \lbrace \ket{0}, \ket{1}, \ket{+}, \ket{-}, \ket{+i}, \ket{-i} \rbrace.
 $$
 
 We then form an estimate:
